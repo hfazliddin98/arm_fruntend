@@ -63,7 +63,13 @@
     width: 25px;
     height: 18px;
 }
-
+.eye_pass
+{
+    width: 18px;
+    position: absolute;
+    top: 25px;
+    right: 36px;
+}
 
 
 
