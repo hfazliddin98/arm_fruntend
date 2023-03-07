@@ -157,7 +157,3 @@ boshHarf.forEach( (e)=> {
         }
     })
 })
-    
-form.addEventListener('submit', ()=>{
-   
-})
