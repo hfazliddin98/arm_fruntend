@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrapt CSS -->
+    <link rel="stylesheet" href="./bootsrtap/css/bootstrap.min.css">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/navbar.css">
+</head>
+<body> 
+    <!-- Navbar -->
+    <nav class="style-bg navbar position-relative bg-primary ps-md-3 ps-lg-5 ps-sm-2">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+            <img src="image/arm.jpg" style="width: 40px; height: 40px; border-radius: 50%;" alt="QDPI">
+            <h2 class="h1 fs-6 d-inline-block text-white style-h2">
+                Axborot Resurs Markazi
+            </h2>
+            </a>
+            <div id="user-div" class="a_1 d-flex align-items-center ps-3 pe-2 style-01">
+                <img class="a_2 style-img-2 d-inline-block me-3" src="image/head-mail.png" alt="">
+                <div class="a_3 d-inline-block">
+                    <!-- User name -->
+                    <b class="a_4 m-0" id="user-name">Isim</b>
+                    <!-- User Last name -->
+                    <p class="a_5 m-0" id="user-lastName">Familya 001</p>
+                </div>
+            </div>
+        </div>
+        <!-- Dropdown menu -->
+        <div class="b_1 position-absolute end-0 top-100 pt-3 pb-4 px-4 bg-primary d-none style_z-index style-bg-02" id="dropdown_menu">
+            <b class="b_2 style_z-index-6">Id: 123456789012</b>
+            <p class="b_3 m-0 mt-2 style_z-index-6" id="user-nameNew">001</p>
+            <p class="b_4 m-0 style_z-index-6" id="user-lastNameNew">002</p>
+            <div class="b_5 icon-chiqish mt-2 style_z-index">
+                <a href="www.google.com" class="b_6 text-white style_z-index w-space text-decoration-none">
+                    Chiqish
+                    <img class="b_7 w-100 h-100 ms-2 mb-1" src="./image/icon-chiqish.png" alt="chiqish">
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- Bootstrap JS -->
+    <script src="./bootsrtap/js/bootstrap.bundle.min.js"></script>
+    <!-- My JS -->
+    <script src="app.js"></script>
+</body>
+</html>
