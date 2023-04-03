@@ -1,0 +1,114 @@
+.style-border {
+    border: 2px solid #212529;
+}
+.style-border::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    transform: scale(0, 1);
+    transition: 0.5s ease;
+    transform-origin: 0% 100%;
+}
+.style-border:hover::after {
+    transform: scale(1, 1);
+}
+.style-w-18 {
+    width: 18rem;
+}
+.menu-icon {
+    width: 25px;
+    cursor: pointer;
+}
+.z_index_0 {
+    z-index: 3;
+}
+.z_index_1 {
+    z-index: -1;
+}
+.z_index_2 {
+    z-index: -2;
+}
+.z_index_3 {
+    z-index: -3;
+}
+.blur {
+    filter: blur(5px);
+}
+.toldir {
+    width: inherit;
+    height: 362px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.card_style {
+    max-width: 11rem;
+    max-height: 240px;
+}
+
+        /* MENU ICON */
+.input-check {
+    display: none;
+}
+.label-check {
+    width: 70px;
+    height: 58px;
+    display: block;
+    cursor: pointer;
+}
+.label-check div {
+    width: 70px;
+    height: 6px;
+    background-color: white;
+    position: absolute;
+}
+.line-1 {
+    transition: all 0.3s;
+}
+.line-2 {
+    margin: 18px 0 0 0;
+    transition: 0.3s;
+}
+.line-3 {
+    margin: 36px 0 0 0;
+    transition: 0.3s;
+}
+#input-check:checked + .label-check .line-1 {
+    transform: rotate(35deg) scaleX(.55) translate(39px, -4.5px);
+    border-radius: 0 50px 50px 50px;
+}
+#input-check:checked + .label-check .line-3 {
+    transform: rotate(-35deg) scaleX(.55) translate(39px, 4.5px);
+    border-radius: 0 50px 50px 50px;
+}
+#input-check:checked + .label-check .line-2 {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 65px;
+}
+@media only screen and (max-width: 380px) {
+    .toldir {
+        height: 570px;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .toldir {
+        height: 450px;
+    }
+}
+@media only screen and (min-width: 1050px) {
+    .card_style {
+        min-width: 15rem;
+        max-height: 300px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .card_style {
+        min-width: 18rem;
+        max-height: 350px;
+    }
+}
